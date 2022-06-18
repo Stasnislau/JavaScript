@@ -1,0 +1,10 @@
+.space {
+    background-image: url("Pictures/space.png");
+    background-attachment: fixed;
+}
+.planet-area{
+    background-image: url("Pictures/mars.png");
+}
+.rocket {
+    background-image: url("Pictures/rocket.png");
+}
