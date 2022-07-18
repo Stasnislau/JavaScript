@@ -1,10 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
 .space {
-    background-image: url("Pictures/space.png");
-    background-attachment: fixed;
+    position: absolute;
+    overflow: hidden;
+    background: url("/Pictures/space.png");
+    width: 100%;
+    height: 100%;
 }
-.planet-area{
-    background-image: url("Pictures/mars.png");
+.planet-area
+{
+    overflow: hidden;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 14%;
 }
-.rocket {
-    background-image: url("Pictures/rocket.png");
+.planet
+{
+    position: absolute;
+    width: 65%;
+    height: 90%;
+    bottom: 10%;
+    left: 0;
 }
+.rocket
+{
+    position: absolute;
+    height: 32%;
+    width: 32%;
+    top: 25%;
+    right: 30%;
+    transform: rotate(25deg);
+}
+.control-panel{
+    display: inline-block;
+    background: linear-gradient(70deg, #191919, black);
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    height: 45%;
+    left: 60%;
+    top:40%;
+    border: 1vh groove yellow;
+}
+.control-panel__inner{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+input[type="range"]
+{
+    transform: rotate(270deg);
+    width: 15%;
+    height: 30%;
+}
+.levers{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    width: 130%;
+    height: 35%;
+    top: 45%;
+}
+.password-input{
+    position: absolute;
+    display: flex;
+    top: 7%;
+    left: 25%;
+}
+.line{
+    background-color: #191919;
+    border-radius: 7%;
+    width: 35%;
+    border: 0.25vh solid yellow;
+    color:white;
+    transform: scale(1.5);
+}
+.input-checkbox{
+    left: 70%;
+    height: 7%;
+    width: 5%;
+    border-radius: 30%;
+    background-color: yellow;
+    font-weight: bold;
+    transform: scale(1.25);
+}
+.check-buttons{
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    transform: scale(1.5);
+    left: 12.5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 0 0;
+}
+.checkbox{
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.launch-button{
+    width: 25%;
+    position: absolute;
+    height: 25%;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    padding: 1% 1%;
+    bottom: 5%;
+    left: 38%;
+    border: 0.5vh solid white;
+}
+

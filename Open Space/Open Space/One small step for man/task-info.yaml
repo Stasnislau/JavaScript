@@ -199,6 +199,120 @@ files:
         await new SpaceTest().runTests()
     }, 30000)
   learner_created: false
-feedback_link: https://hyperskill.org/projects/143/stages/773/implement#comment
-status: Unchecked
-record: -1
+- name: src/style.css
+  visible: true
+  text: |
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        position: absolute;
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .space {
+        position: absolute;
+        overflow: hidden;
+        background: url("/Pictures/space.png");
+        width: 100%;
+        height: 100%;
+    }
+    .planet-area
+    {
+        overflow: hidden;
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        top: 14%;
+    }
+    .planet
+    {
+        position: absolute;
+        width: 65%;
+        height: 90%;
+        bottom: 10%;
+        left: 0;
+    }
+    .rocket
+    {
+        position: absolute;
+        height: 32%;
+        width: 32%;
+        top: 25%;
+        right: 30%;
+        transform: rotate(25deg);
+    }
+    .control-panel{
+        display: inline-block;
+        background-color: black;
+        position: absolute;
+        text-align: center;
+        width: 30%;
+        height: 40%;
+        left: 50%;
+        top:40%;
+    }
+    input[type="range"]
+    {
+        transform: rotate(270deg);
+        width: 15%;
+        height: 30%;
+    }
+    .levers{
+        display: flex;
+        width: 130%;
+        height: 50%;
+        padding: 0 0 0 0;
+    }
+    .password-input{
+        height: 30%;
+    }
+    .check-buttons{
+        height: 30%;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 0 0;
+    }
+    .checkbox{
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+  learner_created: true
+- name: src/test.js
+  visible: true
+  text: |-
+    /**
+     * @param {number[]} nums
+     * @param {number} target
+     * @return {number[]}
+     */
+    var twoSum = function(nums, target) {
+        let pair = {first = undefined, second = undefined};
+        nums.Sort();
+        for (let i=0;i<nums.length;i++)
+        {
+
+        }
+
+        let quickSort = funciton(arr)
+        {
+            if (arr.length < 2)
+                return arr;
+            let point = Math.floar(Math.random*arr.length);
+            let left = arr.filter(value => value < point);
+            let center = arr.filter(value => value == point);
+            let right = arr.filter(value => value > point);
+        }
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/11735#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 06 Jul 2022 16:55:37 UTC
+record: 3
