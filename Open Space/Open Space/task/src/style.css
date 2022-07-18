@@ -19,7 +19,7 @@ body {
 }
 .planet-area
 {
-    overflow: hidden;
+
     position: absolute;
     width: 60%;
     height: 100%;
@@ -38,7 +38,7 @@ body {
     position: absolute;
     height: 32%;
     width: 32%;
-    top: 25%;
+    bottom: 40%;
     right: 30%;
     transform: rotate(25deg);
 }
