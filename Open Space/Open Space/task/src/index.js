@@ -29,7 +29,7 @@ const leverChecker = () => {
     let flag = true;
     let levers = document.querySelectorAll(".panel-levers");
     levers.forEach(element => {
-        if (element.value !== "10") {
+        if (element.value < "5") {
             flag = false;
         }
     })
@@ -47,17 +47,19 @@ document.querySelectorAll(".panel-levers").forEach(element => element.onchange= 
 });
 document.querySelector(".launch-button").addEventListener("click", function (){
     let rocket = document.querySelector(".rocket");
+    let parameterLeft = Number(document.getElementById("first-lever").value) - 2*Number(document.getElementById("third-lever").value) + Number(document.getElementById("fifth-lever").value);
+    let parameterBottom = Number(document.getElementById("second-lever").value) + Number(document.getElementById("fourth-lever").value);
     rocket.animate([
         {
-            left: '35%',
+            left: '32%',
             bottom: '40%'
         },
         {
-            left: '150%',
+            left: String(150+3*parameterLeft)+'%',
             bottom: '150%'
         }
     ], {
-        duration: 2000,
+        duration: 200*(21-parameterBottom),
         iterations: 1
     })
     document.querySelector(".launch-button").setAttribute("disabled", "true");
