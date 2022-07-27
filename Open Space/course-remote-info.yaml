@@ -103,7 +103,7 @@ topics:
     theory_id: 12697
   - title: Clear
     theory_id: 12705
-  - title: HTML forms
+  - title: Intro to HTML forms
     theory_id: 6560
   - title: Introduction to Flexbox
     theory_id: 11760
@@ -113,10 +113,10 @@ topics:
     theory_id: 18859
   - title: Axis alignment
     theory_id: 11784
-  - title: Lists
-    theory_id: 8178
   - title: Pseudo-classes
     theory_id: 9762
+  - title: Intro to Lists
+    theory_id: 8178
   2:
   - title: Comments
     theory_id: 8170

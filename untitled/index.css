@@ -1,0 +1,8 @@
+body{
+    background-color: lightblue;
+}
+.upper-panel{
+}
+input:nth-child(1){
+    float: left;
+}
