@@ -1,0 +1,32 @@
+body{
+    background-color: lightblue;
+}
+.upper-panel{
+}
+#dimensions-input-text{
+    float: left;
+}
+#dimensions-input{
+    margin-top: 1%;
+    margin-left: 5%;
+    clear: both;
+}
+#OK-button{
+    margin-left: 10%;
+}
+.game-field{
+    width: 100vw;
+    height: 80vh;
+}
+.game-tile {
+    height: 8%;
+    width: 4%;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("data/tile.png");
+}
+.end-button{
+    clear: both;
+}
