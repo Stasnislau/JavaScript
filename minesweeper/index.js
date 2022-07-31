@@ -97,7 +97,7 @@ class Board {
                     continue;
                 }
                 if (this.board[i][j].condition === 2) {
-                    tiles[i * this.dimension + j].style.backgroundImage = "url('data/question.png')";
+                    tiles[i * this.dimension + j].style.backgroundImage = "url('data/questionMark.png')";
                     continue;
                 }
                 if (this.board[i][j].condition === -1) {
