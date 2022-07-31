@@ -37,6 +37,10 @@ class Board {
                 }
             }
         }
+        const userFlag = document.getElementById("user-flag");
+        userFlag.style.visibility = "visible";
+        const userBomb = document.getElementById("user-bomb");
+        userBomb.style.visibility = "visible";
 
     }
 
@@ -86,6 +90,10 @@ class Board {
     }
     displayBoard() {
         const tiles = document.querySelectorAll(".game-tile");
+        const bombText = document.getElementById("bomb-count");
+        bombText.innerHTML = String(this.bombs);
+        const flagText = document.getElementById("flag-count");
+        flagText.innerHTML = String(this.unplacedFlags);
         for (let i = 0; i < this.dimension; i++) {
             for (let j = 0; j < this.dimension; j++) {
                 if( this.board[i][j].condition === 0) {

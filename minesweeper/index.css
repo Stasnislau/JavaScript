@@ -30,3 +30,23 @@ body{
 .end-button{
     clear: both;
 }
+.user-info{
+    margin-top: 1%;
+    height: 10%;
+}
+#bomb-count{
+    float: left;
+    font-size: 300%;
+}
+#user-bomb{
+    visibility: hidden;
+    margin-left: 2%;
+}
+#flag-count{
+    font-size: 300%;
+    margin-left: 10%;
+}
+#user-flag{
+    visibility: hidden;
+    margin-left: 2%;
+}
